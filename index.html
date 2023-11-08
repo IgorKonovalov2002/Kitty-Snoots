@@ -4,24 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-    <h1>МЯВЧИКИ</h1>
-    <p>Смешные кисёчки</p>
+
+  <header class="container header">
+      <span class="header__logo">MAYA</span>
+      <ul class="header__nav">
+        <li><a href="#photo">Кисёчки</a></li>
+        <li><a href="#gifs">Гифочки</a></li>
+        <li><a href="#">Обо мне</a></li>
+      </ul>
+  </header>
+  <h1 id="photo" class="title">МИЛЫЕ КИСЁЧКИ</h1>
+  <p class="text">Смотреть всем!</p>
+
+  <main class="main">
     <div class="container">
-        <img src="img/cat_1.jpg" alt="">
-        <img src="img/cat_4.jpg" alt="">
-        <img src="img/photo_2.jpg" alt="">
-        <img src="img/photo_3.jpg" alt="">
-        
+      <div class="main__wrapp">
+        <div class="main__wrapp-cards">
+          <div  class="main__wrapp-card">
+            <img class="main__wrapp-img" src="img/cat_1.jpg" alt="">
+            <p class="main__wrapp-text">носастикс</p>
+          </div>
+          <div class="main__wrapp-card">
+            <img class="main__wrapp-img" src="img/photo_2.jpg" alt="">
+            <p class="main__wrapp-text">улиткинс</p>
+          </div>
+          <div class="main__wrapp-card">
+            <img class="main__wrapp-img" src="img/photo_3.jpg" alt="">
+            <p class="main__wrapp-text">арбузкинс</p>
+          </div>
+          <div class="main__wrapp-card">
+            <img class="main__wrapp-img" src="img/cat_4.jpg" alt="">
+            <p class="main__wrapp-text">челкастикс</p>
+          </div>
+        </div>
+        <h2 id="gifs" class="title">Гифочки</h2>
+        <p class="text">смешные ребята</p>
+        <div class=" main__wrapp-cards wrr">
+          <div class="main__wrapp-card">
+            <img class="main__wrapp-img" src="img/gifs/1.gif" alt="">
+            <p class="main__wrapp-text">бананчикс</p>
+          </div>
+          <div class="main__wrapp-card">
+            <img class="main__wrapp-img" src="img/gifs/2.gif" alt="">
+            <p class="main__wrapp-text">хапи хапи хапи</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="gifs container">
-        <img src="gifs/1.gif" alt="">
-        <img src="gifs/2.gif" alt="">
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">prod. by Maya</p>
     </div>
-    <footer>
-        <h2>Prod. by Maya</h2>
-    </footer>
-</body>
+  </footer>
 </html>
